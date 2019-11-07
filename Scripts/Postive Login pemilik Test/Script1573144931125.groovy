@@ -15,21 +15,18 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.openBrowser('')
-
 WebUI.navigateToUrl('https://mamikos.com/')
 
-WebUI.rightClick(findTestObject('Object Repository/Page_Mamikos - Cari Kost Apartemen Loker Gampang  Akurat/input__downloadViaEmail'))
+WebUI.click(findTestObject('Object Repository/Page_Mamikos - Cari Kost Apartemen Loker Gampang  Akurat/button_Masuk'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Mamikos - Cari Kost Apartemen Loker Gampang  Akurat/input__downloadViaEmail'), 
-    '098032809@9-090.01010')
+WebUI.click(findTestObject('Object Repository/Page_Mamikos - Cari Kost Apartemen Loker Gampang  Akurat/a_Sebagai Pemilik'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Mamikos - Cari Kost Apartemen Loker Gampang  Akurat/input_Kirim lewat SMS_downloadViaPhone'), 
-    '0845646543')
+WebUI.setText(findTestObject('Object Repository/Page_Login Pemilik Iklan - Mamikos/input_No Handphone_inputLog'), '08882800329')
 
-WebUI.click(findTestObject('Object Repository/Page_Mamikos - Cari Kost Apartemen Loker Gampang  Akurat/span_Kirim Sekarang'))
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login Pemilik Iklan - Mamikos/input_Password_insertPassword'), 
+    'WUZcCBIW21sIE+YI4Eoi5A==')
 
-WebUI.click(findTestObject('Object Repository/Page_Mamikos - Cari Kost Apartemen Loker Gampang  Akurat/div_Terjadi galat Silakan coba lagi'))
+WebUI.click(findTestObject('Object Repository/Page_Login Pemilik Iklan - Mamikos/button_LOGIN'))
 
-WebUI.click(findTestObject('Object Repository/Page_Mamikos - Cari Kost Apartemen Loker Gampang  Akurat/button_OK'))
+WebUI.verifyElementPresent(findTestObject('Page_Halaman Akun Pemilik - Mamikos/span_Odyu'), 0)
 

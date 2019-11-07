@@ -18,12 +18,12 @@ WebUI.openBrowser('')
 WebUI.navigateToUrl('https://mamikos.com/')
 
 WebUI.setText(findTestObject('Object Repository/Page_Mamikos - Cari Kost Apartemen Loker Gampang  Akurat/input__downloadViaEmail'), 
-    'insta@mailinator.com')
+    '098032809@9-090.01010')
 
 WebUI.click(findTestObject('Object Repository/Page_Mamikos - Cari Kost Apartemen Loker Gampang  Akurat/span_Kirim Sekarang'))
 
 WebUI.setText(findTestObject('Object Repository/Page_Mamikos - Cari Kost Apartemen Loker Gampang  Akurat/input_Kirim lewat SMS_downloadViaPhone'), 
-    '08882800329')
+    '0932802389')
 
-WebUI.verifyElementVisible(findTestObject('Page_Mamikos - Cari Kost Apartemen Loker Gampang  Akurat/div_Terjadi galat Silakan coba lagi'))
+WebUI.verifyElementVisible(findTestObject('Page_Mamikos - Cari Kost Apartemen Loker Gampang  Akurat/div_Link berhasil dikirim'))
 
