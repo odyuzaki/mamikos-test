@@ -15,18 +15,21 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://mamikos.com/')
+WebUI.navigateToUrl('https://mamikos.com/cari')
 
-WebUI.click(findTestObject('Object Repository/Page_Mamikos - Cari Kost Apartemen Loker Gampang  Akurat/button_Masuk'))
+WebUI.click(findTestObject('Page_Mamikos - Cari Kost di sekitar sini Cari Kost di sekitarmu/button_Saya Mengerti'))
 
-WebUI.click(findTestObject('Object Repository/Page_Mamikos - Cari Kost Apartemen Loker Gampang  Akurat/a_Sebagai Pemilik'))
+WebUI.click(findTestObject('Page_Mamikos - Cari Kost di sekitar sini Cari Kost di sekitarmu/button_Masuk'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Login Pemilik Iklan - Mamikos/input_No Handphone_inputLog'), '08888888888')
+WebUI.click(findTestObject('Page_Mamikos - Cari Kost di sekitar sini Cari Kost di sekitarmu/a_Sebagai Pemilik'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login Pemilik Iklan - Mamikos/input_Password_insertPassword'), 
-    'RigbBhfdqOBGNlJIWM1ClA==')
+WebUI.setText(findTestObject('Page_Login Pemilik Iklan - Mamikos/input_No Handphone_inputLog'), '08888888888')
 
-WebUI.click(findTestObject('Object Repository/Page_Login Pemilik Iklan - Mamikos/button_LOGIN'))
+WebUI.setEncryptedText(findTestObject('Page_Login Pemilik Iklan - Mamikos/input_Password_insertPassword'), 'RigbBhfdqOBGNlJIWM1ClA==')
+
+WebUI.click(findTestObject('Page_Login Pemilik Iklan - Mamikos/button_LOGIN'))
 
 WebUI.verifyElementPresent(findTestObject('Page_Login Pemilik Iklan - Mamikos/button_Login kembali'), 0)
+
+WebUI.closeBrowser()
 

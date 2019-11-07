@@ -15,11 +15,13 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://mamikos.com/')
+WebUI.navigateToUrl('https://mamikos.com/cari')
 
-WebUI.click(findTestObject('Object Repository/Page_Mamikos - Cari Kost Apartemen Loker Gampang  Akurat/button_Masuk'))
+WebUI.click(findTestObject('Page_Mamikos - Cari Kost di sekitar sini Cari Kost di sekitarmu/button_Saya Mengerti'))
 
-WebUI.click(findTestObject('Object Repository/Page_Mamikos - Cari Kost Apartemen Loker Gampang  Akurat/a_Sebagai Pemilik'))
+WebUI.click(findTestObject('Page_Mamikos - Cari Kost di sekitar sini Cari Kost di sekitarmu/button_Masuk'))
+
+WebUI.click(findTestObject('Page_Mamikos - Cari Kost di sekitar sini Cari Kost di sekitarmu/a_Sebagai Pemilik'))
 
 WebUI.setText(findTestObject('Object Repository/Page_Login Pemilik Iklan - Mamikos/input_No Handphone_inputLog'), '08882800329')
 
